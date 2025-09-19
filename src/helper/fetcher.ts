@@ -5,12 +5,12 @@ const sharedHeaders = {
   'x-goog-api-key': GEMINI_API_KEY,
 }
 
-export function postFetcher(
+export async function postFetcher(
   url: string,
   body: Record<string, string | object>,
   customHeaders?: Record<string, string>
 ) {
-  return fetch(url, {
+  return await fetch(url, {
     method: 'POST',
     headers: {
       ...sharedHeaders,
