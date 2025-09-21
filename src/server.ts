@@ -2,7 +2,7 @@ import * as http from 'http'
 import type { Req, Res } from '@/types/http'
 import { routes as catBotRoutes } from '@/api/catBot/route'
 import httpStatus from 'http-status'
-import { sendResponse } from './helper/response'
+import { sendResponse } from '@/helper/response'
 
 // You can add additional route modules here and mount them
 const routes = [catBotRoutes]
